@@ -11,7 +11,7 @@ cd expense_tracker
 
 
 2. **Set up a virtual environment**:
-python3 -m venv venv
+py -m venv venv
 source venv/bin/activate # On Windows, use venv\Scripts\activate
 
 

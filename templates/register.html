@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register - Personal Expense Tracker</title>
+    <title>Register</title>
   </head>
   <body>
     <h1>Register</h1>
-    <form method="post">
+    <form method="POST">
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required /><br />
+      <input type="text" name="username" id="username" required /><br />
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required /><br />
+      <input type="password" name="password" id="password" required /><br />
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required /><br />
+      <input type="email" name="email" id="email" required /><br />
       <button type="submit">Register</button>
     </form>
+    <a href="{{ url_for('login') }}">Login</a>
   </body>
 </html>

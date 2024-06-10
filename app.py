@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
-from models import db, User, Expense, Category
+from models import db, User, Category, Expense, Payment, Budget, RecurringExpense, Tag, ExpenseTag
 
 app = Flask(__name__)
 app.config.from_object('config.Config')
@@ -33,7 +33,8 @@ def login():
             session['user_id'] = user.user_id
             return redirect(url_for('home'))
         else:
-            return 'Invalid credentials'
+            flash('Invalid credentials')
+            return redirect(url_for('login'))
     return render_template('login.html')
 
 @app.route('/logout')

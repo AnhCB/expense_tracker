@@ -1,0 +1,6 @@
+user_id,amount,category_id,place_id,payment_type_id,emotion_id,description,date
+1,150.00,1,1,1,1,Groceries shopping,2023-06-01
+2,200.00,2,2,2,2,Online purchase,2023-06-02
+1,50.00,3,3,3,3,Utilities bill,2023-06-03
+2,300.00,4,1,1,4,Car maintenance,2023-06-04
+1,120.00,2,2,2,1,Movie tickets,2023-06-05

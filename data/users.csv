@@ -1,0 +1,3 @@
+username,password,email
+user1,hashedpassword1,user1@example.com
+user2,hashedpassword2,user2@example.com

@@ -1,5 +1,6 @@
 -- Drop tables if they exist
 DROP TABLE IF EXISTS Expenses;
+DROP TABLE IF EXISTS Income;
 DROP TABLE IF EXISTS Users;
 DROP TABLE IF EXISTS Categories;
 DROP TABLE IF EXISTS PaymentType;
@@ -37,6 +38,16 @@ CREATE TABLE IF NOT EXISTS Place (
 CREATE TABLE IF NOT EXISTS Emotions (
     emotion_id INT AUTO_INCREMENT PRIMARY KEY,
     emotion_name VARCHAR(80) NOT NULL UNIQUE
+);
+
+-- Create Income table
+CREATE TABLE IF NOT EXISTS Income (
+    income_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    amount DECIMAL(10, 2) NOT NULL,
+    source VARCHAR(100),
+    date DATE NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 
 -- Create Expenses table

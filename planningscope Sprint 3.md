@@ -1,42 +1,71 @@
+# Sprint 3 Planning Scope
 
-## Sprint 3 Planning Scope
+## Goals
 
-### Goals
+1. **Implement Sub-Queries**:
+   - Write and test sub-queries for data analysis.
 
-1. **Implement Basic Security**:
-   - Add user authentication and authorization.
-   - Implement secure password storage.
-   - Document the security measures implemented.
+2. **Create and Optimize Indexes**:
+   - Implement indexes to improve query performance.
+   - Analyze and optimize query performance.
 
-2. **ACID Transactions**:
-   - Implement transactions to ensure data integrity.
+3. **Set Up User Privileges**:
+   - Implement user privileges to control access to the database.
+
+4. **Create and Utilize Views**:
+   - Create views to simplify complex queries.
+
+5. **Implement ACID Transactions**:
+   - Ensure all CRUD operations are atomic, consistent, isolated, and durable.
+
+## Tasks
+
+1. **Sub-Queries**:
+   - Write sub-queries to retrieve specific subsets of data.
+   - Test sub-queries on the MySQL database to ensure they return expected results.
+   - Document each sub-query with its purpose and results.
+
+2. **Indexes**:
+   - Create indexes on frequently queried columns to improve performance.
+   - Analyze query performance before and after indexing.
+   - Optimize any slow-running queries using the created indexes.
+   - Document the indexing strategy and performance improvements.
+
+3. **User Privileges**:
+   - Define different user roles and assign appropriate privileges.
+   - Implement and test user privileges to ensure controlled access.
+   - Document the privileges assigned to each role.
+
+4. **Views**:
+   - Create views to encapsulate complex queries and simplify data access.
+   - Test the views to ensure they return correct and expected results.
+   - Document the created views and their purposes.
+
+5. **ACID Transactions**:
+   - Implement transactions for complex CRUD operations.
    - Ensure that all CRUD operations are atomic, consistent, isolated, and durable.
-   - Document the transaction management and examples.
+   - Test transactions to verify they meet ACID properties.
+   - Document transaction management with examples and explanations.
 
-### Tasks
+## Success Criteria
 
-1. **Basic Security**:
-   - Implement user authentication (e.g., login, registration) with secure password hashing (using libraries like bcrypt).
-   - Set up user roles and permissions for different database operations.
-   - Secure the application against SQL injection attacks by using prepared statements.
-   - Document the security implementation, including code snippets and explanations.
+- Successfully written and tested sub-queries with accurate results.
+- Indexes are created and query performance is optimized.
+- User privileges are correctly assigned and verified.
+- Views are created and functioning as intended.
+- Transactions are implemented and tested, ensuring they meet ACID properties.
+- Comprehensive documentation covering sub-queries, indexes, privileges, views, and transactions.
 
-2. **ACID Transactions**:
-   - Implement transactions in the MySQL database for complex operations.
-   - Ensure that all CRUD operations are wrapped in transactions where necessary.
-   - Test transactions to ensure they meet ACID properties.
-   - Provide examples of transaction management (e.g., transferring funds between accounts).
-   - Document the transaction handling with examples and explanations.
-
-### Timeline
+## Timeline
 
 - **Week 1**:
-  - Implement user authentication and authorization.
-  - Secure password storage and protect against SQL injection.
-  - Begin documentation of security measures.
+  - Write and test sub-queries.
+  - Implement indexes and analyze query performance.
+  - Define user roles and set up privileges.
+  - Begin creating views to simplify complex queries.
 
 - **Week 2**:
-  - Implement ACID transactions for complex operations.
-  - Test and verify transaction management.
-  - Complete documentation for transactions and security.
-
+  - Implement and test ACID transactions.
+  - Finalize and verify all tasks from Week 1.
+  - Complete documentation for sub-queries, indexes, privileges, views, and transactions.
+  - Prepare the final submission for Sprint 3.

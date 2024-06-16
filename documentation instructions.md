@@ -87,15 +87,19 @@ CREATE TABLE IF NOT EXISTS Expenses (
     FOREIGN KEY (payment_type_id) REFERENCES PaymentType(payment_type_id),
     FOREIGN KEY (emotion_id) REFERENCES Emotions(emotion_id)
 );
+```
 
 ## Loading Data from CSV Files
+
 To load data into the tables from CSV files, follow these steps:
 
 Ensure your CSV files are correctly formatted and saved with LF (Line Feed) line endings.
 Place your CSV files in the directory C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/.
 Use the following commands to load the data into the tables:
-Truncate Tables (if necessary)
 
+## Truncate Tables (if necessary)
+
+```sql
 SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE TABLE Income;
 TRUNCATE TABLE Expenses;
@@ -106,9 +110,11 @@ TRUNCATE TABLE Place;
 TRUNCATE TABLE Emotions;
 SET FOREIGN_KEY_CHECKS = 1;
 
+```
 
-Load Data Commands
+## Load Data Commands
 
+```sql
 -- Load data into Users table
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/users.csv'
 INTO TABLE Users
@@ -172,10 +178,12 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (user_id, amount, category_id, place_id, payment_type_id, emotion_id, description, date);
 
+```
 
-Verifying Data Load
+## Verifying Data Load
 To verify that the data has been loaded correctly, run the following SELECT queries for each table:
 
+```sql
 -- Verify Users table
 SELECT * FROM Users;
 

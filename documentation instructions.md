@@ -1,7 +1,3 @@
-Sure, here is the documentation in Markdown format:
-
-markdown
-Copy code
 
 # Expense Tracker Database Setup and Data Analysis
 

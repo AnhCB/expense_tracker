@@ -205,10 +205,11 @@ SELECT * FROM Income;
 -- Verify Expenses table
 SELECT * FROM Expenses;
 
-
-Complex SQL Queries
+```
+## Complex SQL Queries
 Here are some complex SQL queries to analyze the data:
 
+```sql
 1. Aggregating Expenses by Categories and Months
 SELECT
     c.category_name,

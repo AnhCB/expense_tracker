@@ -40,4 +40,3 @@
   - Test and verify transaction management.
   - Complete documentation for transactions and security.
 
-By following this plan, you will be able to achieve the objectives for Sprint 2 and Sprint 3, ensuring your project is well-structured, secure, and adheres to database best practices. If you have any questions or need further assistance, feel free to ask!

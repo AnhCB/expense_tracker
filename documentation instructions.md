@@ -87,7 +87,8 @@ CREATE TABLE IF NOT EXISTS Expenses (
     FOREIGN KEY (payment_type_id) REFERENCES PaymentType(payment_type_id),
     FOREIGN KEY (emotion_id) REFERENCES Emotions(emotion_id)
 );
-Loading Data from CSV Files
+
+## Loading Data from CSV Files
 To load data into the tables from CSV files, follow these steps:
 
 Ensure your CSV files are correctly formatted and saved with LF (Line Feed) line endings.

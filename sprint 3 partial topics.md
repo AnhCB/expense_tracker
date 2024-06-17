@@ -18,6 +18,7 @@ This document provides detailed steps to set up and verify various database topi
 ### Verify Subqueries
 
 1. Open MySQL Workbench and connect to your database.
+
 2. Open a new SQL tab and run the following subquery to verify:
 
     ```sql
@@ -65,9 +66,10 @@ This document provides detailed steps to set up and verify various database topi
    - Open a terminal or command prompt on your computer.
 
 2. **Log in as `readonly` User:**
-   ```sh
+   ```sql
    mysql -u readonly -p
-```
+   ```
+
 Enter the password "123456" when prompted.
 
 3. Run the following commands to verify the readonly user's privileges

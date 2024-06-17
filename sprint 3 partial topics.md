@@ -1,7 +1,9 @@
 # Expense Tracker Database Setup and Verification
 
 This document provides detailed steps to set up and verify various database topics including subqueries, user privileges, indexes, views, and transactions in the Expense Tracker database.
+## ERD Diagram
 
+![ERD Diagram](ERD_diagram.png)
 ## Table of Contents
 
 1. [Subqueries](#subqueries)
@@ -32,15 +34,8 @@ This document provides detailed steps to set up and verify various database topi
     );
     ```
 
-3. If this returns no results, ensure there are users and expenses in the database:
+3.Evidence
 
-    ```sql
-    -- Check Users table
-    SELECT * FROM Users;
-
-    -- Check Expenses table
-    SELECT * FROM Expenses;
-    ```
 
 ## User Privileges
 

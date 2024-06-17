@@ -8,7 +8,7 @@
 3. [Verifying Data Load](#verifying-data-load)
 4. [Complex SQL Queries](#complex-sql-queries)
 
-## Database Schema Setup
+## Database Schema Setup (Since the new schema update will include the setup and the loading data from CSV files, please ignore these first 2 steps.)
 
 To create the necessary tables for the Expense Tracker database, follow these steps:
 
@@ -209,8 +209,9 @@ SELECT * FROM Expenses;
 ## Complex SQL Queries
 Here are some complex SQL queries to analyze the data:
 
-```sql
 1. Aggregating Expenses by Categories and Months
+```sql
+
 SELECT
     c.category_name,
     DATE_FORMAT(e.date, '%Y-%m') AS month,
@@ -223,9 +224,10 @@ GROUP BY
     c.category_name, month
 ORDER BY
     month, c.category_name;
-
+```
 
 2. Calculating the Average Expense per User
+```sql
 SELECT
     u.username,
     AVG(e.amount) AS avg_expense
@@ -235,9 +237,10 @@ JOIN
     Users u ON e.user_id = u.user_id
 GROUP BY
     u.username;
-
+```
 
 3.  Calculate the Percentage of Total Income Spent
+```sql
 SELECT
     u.username,
     SUM(e.amount) AS total_expenses,

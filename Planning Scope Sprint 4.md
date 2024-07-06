@@ -106,6 +106,4 @@
     - Identification of minimal functional dependencies.
     - Preparation for ensuring the database schema is in 3NF and 4NF.
 
----
 
-By following this detailed plan, we aim to cover all the specified topics for Sprint 4 effectively. Each goal is aligned with the course objectives and provides a comprehensive approach to enhancing the Expense Tracker database.
